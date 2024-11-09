@@ -1,0 +1,306 @@
+/*General*/
+* {
+    font-family: times 'Times New Roman', Times, serif, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Listo*/
+html {
+    scroll-behavior: smooth; /* Activa el desplazamiento suave en todo el documento */
+}
+
+/*Listo*/
+.explore-btn a {
+    color: white; /* Asegúrate de que el texto del enlace sea blanco, como el botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+/*Listo*/
+.explore-btn a:hover {
+    color: white; /* Asegura que no cambie el color del texto del enlace al pasar el mouse */
+}
+
+/*Listo*/
+.justificar  {
+    text-align: justify;
+}
+
+/*Listo*/
+.centrar  {
+    text-align: center;
+}
+
+/*Listo*/
+body {
+    line-height: 1.6;
+    color: #000000;
+    background-color: #E1DFFE;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Listo*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 7.5px;
+    box-shadow: 0 2px 4px #1d1957;
+    flex: 1;
+}
+
+/*Listo*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Añadido espacio para el encabezado */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #332e83; 
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/*Listo*/
+.nav-links {
+    display: flex;
+    gap: 50px; /* Espacio entre los enlaces */
+}
+
+/*Listo*/
+.nav-links a {
+    color: #ffffff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+/*Listo*/
+.nav-links a:hover {
+    color: #5f5da1; /* Color al pasar el mouse */
+}
+
+/*Listo*/
+.logo img {
+    height: 50px; /* Ajusta según el tamaño deseado */
+}
+
+/*Listo*/
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/*Listo*/
+.login-btn, .register-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/*Listo*/
+.login-btn {
+    background-color: #1d1957;
+    color: white;
+}
+
+/*Listo*/
+.register-btn {
+    background-color: #1d1957;
+    color: white;
+}
+
+/*Listo*/
+.login-btn:hover {
+    background-color: #5f5da1;
+}
+
+/*Listo*/
+.register-btn:hover {
+    background-color: #5f5da1;
+}
+
+/*Listo*/
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: #000000;
+    background-image: url("../images/fondo.png");/* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Listo*/
+.explore-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #1d1957; /* Color del botón "Explorar" */
+    color: white;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+}
+
+/*Listo*/
+.explore-btn:hover {
+    background-color: #5f5da1; /* Color al pasar el mouse */
+}
+
+/*Listo*/
+.planes {
+    padding: 10px;
+}
+
+/*Listo*/
+.planes .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Listo*/
+.planes .col {
+    flex-basis: 33.33%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido de la columna uniformemente */
+    text-align: center;
+}
+
+/*Listo*/
+.buy-btn    {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #1d1957; /* Color del botón "Explorar" */
+    color: white;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    display: inline-block;
+}
+
+/*Listo*/
+.buy-btn:hover {
+    background-color: #5f5da1; /* Color al pasar el mouse */
+}
+
+/*Listo*/
+.testimonios {
+    padding: 20px;
+}
+
+/*Listo*/
+.testimonios .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Listo*/
+.testimonios .col {
+    flex-basis: 33.33%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que los testimonios se distribuyan correctamente */
+}
+
+/*Listo*/
+footer {
+    background-color: #332e83;
+    color: #fff;
+    padding: 20px; /* Espacio interno */
+    text-align: center;
+    position: relative; /* Asegura que se coloque correctamente */
+}
+
+/*Listo*/
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre los enlaces */
+}
+
+/*Listo*/
+.footer-content a {
+    color: #ffffff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+/*Listo*/
+.footer-content a:hover {
+    color: #5f5da1; /* Color al pasar el mouse */
+}
+
+.cookie-banner {
+    background-color: #332e83; /* Color de fondo igual al del header */
+    color: white; /* Cambiar el color del texto a blanco */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    animation: slideIn 0.5s ease-out;
+}
+
+.cookie-banner button {
+    background-color: #1d1957; /* Color del botón Aceptar igual al de "Iniciar sesión" */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: #5f5da1; /* Color al pasar el mouse por encima */
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cookie-banner a {
+    color: #8a2be2; /* Puedes ajustar el color del enlace si lo deseas */
+    text-decoration: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
